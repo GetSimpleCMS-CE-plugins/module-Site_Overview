@@ -2,7 +2,7 @@
 /**
  * Module Name: Site Overview
  * Module ID: siteoverview
- * Description: Shows page, upload, and user count at a glance.
+ * Description: Displays page, upload, and user count at a glance.
  * Version: 1.0
  * Default W: 12
  * Default H: 2
