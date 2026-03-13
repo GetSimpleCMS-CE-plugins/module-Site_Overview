@@ -7,7 +7,11 @@
  * Default W: 12
  * Default H: 2
  */
+ 
 if (!defined('IN_GS')) { die('You cannot load this page directly.'); }
+
+// Unique ID to avoid conflicts between modules (optional)
+$uid = 'sov_' . substr(md5(__FILE__), 0, 6);
 
 // ── Counts ────────────────────────────────────────────────
 $page_count   = defined('GSDATAPAGESPATH') ? count(glob(GSDATAPAGESPATH . '*.xml') ?: array()) : 0;
@@ -39,8 +43,6 @@ $stats = array(
     ),
 );
 
-// Unique ID so styles don't bleed if multiple modules load
-$uid = 'sov_' . substr(md5(__FILE__), 0, 6);
 ?>
 <style>
 #<?php echo $uid ?> {
